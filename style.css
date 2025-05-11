@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    gap: 30px;
+}
+
+.headerLeft{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding: 22px 30px;
+    border-right: 1px solid lightgrey;
+}
+
+.headerAddress{
+    padding: 20px 30px;
+}
+
+.headerAddress h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.headerAddress p{
+    font-size: 14px;
+}
+
+.searchBox{
+    display: flex;
+    flex-grow: 1;
+    border-radius: 15px;
+    background-color: #F8F8F8;
+    border: 1px solid #f4f4f4;
+     
+}
+
+.searchBox button{
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.searchBox input{
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+
+.searchBox input:focus{
+    outline: none;
+}
+
+.headerBtn{
+    display: flex;
+    gap: 40px;
+    margin-right: 40px;
+
+}
+
+.headerBtn button{
+    font-size: 16px;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+}
+
+.headerBtn button:last-child{
+    background-color: #E5E5E5;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.bannerSection{
+    margin: 0 auto;
+    max-width: 1280px;
+
+}
+
+.bannerSection img{
+    width: 100%;
+}
+
+.orderBanner{
+    display: flex;
+    width: 1280px;
+}
+
+.orderBannerItems{
+    flex-basis: 27%;
+    margin: 1%;
+}
+
+.orderBannerItems img{
+    width: 100%;
+}
+
+.categorySection{
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.categoryItems{
+    flex-basis: 10%;
+}
+
+.categoryItems img{
+    width: 100%;
+}
+
+.sectionCart{
+    margin: 16px;
+}
+.section-header {
+    font-size: 24px;
+    font-weight: 500;
+}
+.section-list {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    /* overflow: auto scroll; */
+    gap: 20px;
+}
+.product-card {
+    padding: 12px;
+    width: 154px;
+    border: 0.5px solid rgb(221, 221, 221);
+    border-radius: 8px;
+}
+.product-card img {
+    width: 100%;
+}
+.product-card-title {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+.product-card-desc {
+    font-size: 12px;
+    margin-bottom: 12px;
+    color: #757575;
+}
+.product-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-action button {
+    width: 90px;
+    height: 36px;
+    background-color: rgb(247, 255, 249);
+    border: 0.5px solid rgb(12, 131, 31);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-qty {
+    font-size: 14px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  columns: 2; /* Multi-column layout */
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+.see-all {
+  font-size: 0.9rem;
+  color: green;
+  margin-left: 10px;
+  cursor: pointer;
+}
