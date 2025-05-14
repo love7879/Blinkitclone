@@ -1,45 +1,97 @@
-@media only screen and (min-width:200px) and (max-width:575px){
-    header{
+@media only screen and (max-width: 575px) {
+    header {
         flex-direction: column;
-        align-items: stretch;
-    }
-    .headerLeft{
-        justify-content: center;
-    }
-    .logo{
-        padding: 10px;
-    }
-    .headerAddress{
+        align-items: flex-start;
+        gap: 10px;
         padding: 10px;
     }
 
-    .headerAddress p{
+    .headerLeft {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo, .headerAddress {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .headerAddress p {
         font-size: 12px;
     }
-    .headerAddress h3{
+
+    .headerAddress h3 {
         font-size: 15px;
     }
 
-    .searchBox button{
+    .searchBox {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .searchBox button {
         padding: 10px;
     }
 
-    .headerBtn{
-        position: fixed;
+    .headerBtn {
+        position: static;
         width: 100%;
-        margin-right: 0px;
+        margin: 10px 0;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .bannerSection {
+        display: none;
+    }
+
+    .orderBanner {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .orderBannerItems {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .categorySection {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+    }
+
+    .categoryItems {
+        flex-basis: 45%;
+        margin: 10px 0;
+    }
+
+    .section-list {
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .bannerSection{
-        display: none;
-    }
-   
-    .orderBanner{
-        flex-direction: column;
+    .product-card {
+        width: 45%;
+        margin-bottom: 20px;
     }
 
-    .categoryItems{
-        flex-basis: 25%;
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column ul {
+        columns: 1;
     }
 }
