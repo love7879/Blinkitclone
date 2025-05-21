@@ -99,12 +99,12 @@ header{
     width: 1280px;
 }
 
-.orderBannerItems{
+.orderBannerItem{
     flex-basis: 27%;
     margin: 1%;
 }
 
-.orderBannerItems img{
+.orderBannerItem img{
     width: 100%;
 }
 
