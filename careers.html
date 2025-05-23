@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #navbar {
+            width: 100vw;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav-left img {
+            width: 128px;
+            height: 28.3px;
+            margin: 30px
+        }
+
+        .topnav-right a {
+            text-decoration: none;
+            color: #000000;
+            margin-right: 50px;
+            font-weight: lighter;
+        }
+
+        .herosection {
+            height: 100%;
+            margin-top: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+
+        }
+
+        .herosection h1 {
+            margin-top: 30px;
+            font-size: 45px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .centered-text {
+            text-align: center;
+            line-height: 1;
+        }
+
+        .centered-text h1 {
+            font-size: 54px;
+
+            font-weight: lighter;
+
+        }
+
+        .paraimage {
+            width: 100vw;
+            display: flex;
+            margin-top: 150px;
+        }
+
+        .paraimage img {
+            width: 390px;
+            height: 248px;
+        }
+
+        .paraimage p {
+            text-align: justify;
+            padding: 10px;
+            margin-left: 40px;
+            margin-right: 150px;
+
+            font-size: 20px;
+            font-weight: lighter;
+            font-family: 'Inter', sans-serif;
+            color: #50586A;
+        }
+
+        .team-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 80px;
+            margin-top: 100px;
+            gap: 60px;
+            flex-wrap: wrap;
+        }
+
+        .image-side img {
+            width: 450px;
+            height: 304px;
+        }
+
+        .text-side {
+
+            font-family: 'Inter', sans-serif;
+            color: #2D2D44;
+        }
+
+        .text-side h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+
+        .text-side ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            color: #4A4A68;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .main {
+            width: 100vw;
+        }
+
+        .main h1 {
+            margin-top: 80px;
+            padding-left: 50px;
+            font-size: 40px;
+            font-family: 'Inter', sans-serif;
+            color: #2D2D44;
+        }
+
+        .main p {
+            font-size: 20px;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            padding-left: 50px;
+            font-family: 'Inter', sans-serif;
+            color: #2D2D44;
+        }
+
+        .footer {
+            background-color: #f9f9fb;
+            padding: 50px 80px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer-logo img {
+            max-width: 140px;
+        }
+
+        .footer-column h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #000;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-column ul li a {
+            text-decoration: none;
+            color: #5a5a7a;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        @media (max-width: 1024px) {
+            .footer-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 40px;
+                justify-content: flex-start;
+            }
+
+            .footer-column,
+            .footer-logo {
+                flex: 1 1 45%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            .paraimage,
+            .team-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .paraimage img,
+            .image-side img {
+                width: 100%;
+                height: auto;
+                max-width: 380px;
+            }
+
+            .paraimage p {
+                margin: 20px;
+                font-size: 18px;
+            }
+
+            .text-side h2 {
+                font-size: 28px;
+            }
+
+            .text-side ul {
+                font-size: 16px;
+            }
+
+            .main h1 {
+                font-size: 28px;
+                padding: 20px;
+            }
+
+            .main p {
+                font-size: 16px;
+                padding: 0 20px;
+            }
+
+            .footer-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-column,
+            .footer-logo {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .footer-column ul li a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="topnav-left">
+            <img src="https://www.eternal.com/_astro/eternal_footer_logo.Y-I0MwrK.svg" alt="">
+        </div>
+        <div class="topnav-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="#About">Culture</a>
+            <a href="#careers">Careers</a>
+            <a href="#Partner">Investors</a>
+            <a href="#blog">Contact</a>
+
+        </div>
+    </nav><!--end of navbar-->
+
+    <section class="herosection">
+        <div class="centered-text">
+            <h1>Hiring is the most important</h1>
+            <h1>role at Eternal</h1>
+    </section><!--end of herosection-->
+
+    <section class="paraimage">
+        <div class="textalign">
+            <p>Identifying, recruiting, and enabling the right people in the right teams is by far one of the highest
+                leverage roles any of us play within the organization.
+
+                We are always on the lookout for exceptional folks to join Eternal, no matter their experience. If
+                you're passionate about what we’re building, we’ll find a place for you.
+
+                We create opportunities around great people, not the other way around.
+            </p>
+            <p>
+                We are always on the lookout for exceptional folks to join Eternal, no matter their experience. If
+                you're passionate about what we’re building, we’ll find a place for you.
+            </p>
+
+            <p>
+                We create opportunities around great people, not the other way around.
+            </p>
+        </div>
+
+        <div>
+            <img src="https://b.zmtcdn.com/data/o2_assets/b041f38b761de84fbb11a8fc5ee3cba01745477974.png" alt="">
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="image-side">
+            <img src="https://b.zmtcdn.com/data/o2_assets/d86b09bc51399c5ec3c9ce3212a601f81745478521.png" alt="">
+        </div>
+        <div class="text-side">
+            <h2>
+                When we meet potential<br>team members, we ask<br>ourselves:
+            </h2>
+            <ul>
+                <li>Are they smarter than us?</li>
+                <li>Are they more ambitious than us?</li>
+                <li>Do they take full ownership of their lives?</li>
+                <li>Are they comfortable saying, “I don’t know”?</li>
+            </ul>
+            <p class>If that sounds like you, we’d love to meet...</p>
+        </div>
+    </section>
+
+    <section class="main">
+        <h1>...that said, we only accept applications through
+            employee referrals</h1>
+        <p>so find someone in our team who can vouch for you, and have a conversation with them. That’s where it all
+            starts!</p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://www.eternal.com/_astro/eternal_footer_logo.Y-I0MwrK.svg" alt="">
+            </div>
+
+            <div class="footer-column">
+                <h4>Our businesses</h4>
+                <ul>
+                    <li><a href="#">Zomato</a></li>
+                    <li><a href="#">Blinkit</a></li>
+                    <li><a href="#">District</a></li>
+                    <li><a href="#">Hyperpure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Culture</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Impact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get in touch</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
